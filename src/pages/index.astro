@@ -4,13 +4,36 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Welcome to Astro.">
 	<main class="flex flex-grow flex-col items-center justify-center px-4 md:px-0">
-         <div class="text-center container max-w-3xl mx-auto mb-8">
-           <img src='waving_hand.gif' class='w-20 mx-auto mb-4'>
-           <h1 class="text-6xl font-medium mb-4">Hey, tudo bem?<br> I’m Edu.</h1>
-           <p class="text-xl font-light text-gray-600 mb-4">I'm a software developer and electrical engineer based in Brazil. 🇧🇷</p>
-           <p class="text-xl font-light text-gray-600">I work with tech companies and clients to create exceptional products. I’m collaborating with PCM Soluções to enhance VoIP communications through innovative solutions.</p>
-				</div>
-			</div>
-		</div>
+        <div class="text-center container max-w-3xl mx-auto mb-8">
+            <img src='waving_hand.gif' class='w-20 mx-auto mb-4'>
+            <h1 class="text-6xl font-medium mb-4 cursor-default">
+                <span id="greeting" class="transition-opacity duration-500">Hey, tudo bem?<br> I’m Edu.</span>
+            </h1>
+            <p class="text-xl font-light text-gray-600 mb-2">I'm a software developer and electrical engineer based in Brazil. 🇧🇷
+            <p class="text-xl font-light text-gray-600">I work with tech companies and clients to create exceptional products. I’m collaborating with PCM Soluções to enhance VoIP communications through innovative solutions.</p>
+        </div>
 	</main>
 </Layout>
+
+<script is:inline>
+    function handleMouseOver() {
+        const element = document.getElementById('greeting');
+        element.style.opacity = "0";
+        setTimeout(() => {
+            element.innerHTML = "Hey, how are you?<br> I’m Edu.";
+            element.style.opacity = "1";
+        }, 300);
+    }
+
+    function handleMouseOut() {
+        const element = document.getElementById('greeting');
+        element.style.opacity = "0";
+        setTimeout(() => {
+            element.innerHTML = "Hey, tudo bem?<br> I’m Edu.";
+            element.style.opacity = "1";
+        }, 300);
+    }
+
+    document.getElementById('greeting').addEventListener('mouseover', handleMouseOver);
+    document.getElementById('greeting').addEventListener('mouseout', handleMouseOut);
+</script>
