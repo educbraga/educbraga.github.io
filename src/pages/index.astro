@@ -7,7 +7,7 @@ import Layout from '../layouts/Layout.astro';
         <div class="text-center container max-w-3xl mx-auto mb-8 sm:mb-20 px-4">
             <img src='waving_hand.gif' class='w-20 mx-auto mb-4' alt="Waving hand">
             <h1 class="text-6xl font-medium mb-4 cursor-default">
-                <span id="greeting" class="transition-opacity duration-500">Hey, tudo bem?<br> I’m Edu.</span>
+                <span id="greeting" class="transition-opacity duration-500">Hey, tudo bem?<br>I’m Edu.</span>
             </h1>
             <p class="sm:text-xl text-lg sm:font-light text-gray-600 mb-2">I'm a software developer and electrical engineer based in Brazil. 🇧🇷</p>
             <p class="sm:text-xl text-lg sm:font-light text-gray-600">I work with tech companies and clients to create exceptional products. I’m collaborating with PCM Soluções to enhance VoIP communications through innovative solutions.</p>
@@ -20,7 +20,7 @@ import Layout from '../layouts/Layout.astro';
         const element = document.getElementById('greeting');
         element.style.opacity = "0";
         setTimeout(() => {
-            element.innerHTML = "Hey, how are you?<br> I’m Edu.";
+            element.innerHTML = "Hey, how are you?<br>I’m Edu.";
             element.style.opacity = "1";
         }, 300);
     }
@@ -29,7 +29,7 @@ import Layout from '../layouts/Layout.astro';
         const element = document.getElementById('greeting');
         element.style.opacity = "0";
         setTimeout(() => {
-            element.innerHTML = "Hey, tudo bem?<br> I’m Edu.";
+            element.innerHTML = "Hey, tudo bem?<br>I’m Edu.";
             element.style.opacity = "1";
         }, 300);
     }
