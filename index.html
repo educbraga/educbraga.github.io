@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Open Graph meta tags -->
+        <meta property="og:title" content="<Edu/> - Software Developer" />
+        <meta property="og:description" content="Eduardo Braga" />
+        <meta
+            property="og:image"
+            content="https://eduardobraga.me/waving_hand.gif"
+        />
+        <meta property="og:url" content="https://eduardobraga.me" />
+        <meta property="og:type" content="website" />
+
+        <!-- Twitter Card meta tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="<Edu/> - Software Developer" />
+        <meta name="twitter:description" content="Eduardo Braga" />
+        <meta
+            name="twitter:image"
+            content="https://eduardobraga.me/waving_hand.gif"
+        />
+
+        <title><Edu/> - Software Developer</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Portfolio" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/png" href="favicon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    fontFamily: {
+                        sans: ["DM Sans", "sans-serif"],
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body class="font-sans bg-stone-100">
+        <div class="container mx-auto max-w-6xl min-h-screen flex flex-col">
+            <header class="px-4 py-8 text-center">
+                <div
+                    class="container mx-auto flex justify-between items-center"
+                >
+                    <!-- Logo -->
+                    <div class="sm:mb-0">
+                        <a href="/" class="text-3xl font-medium"
+                            >&lt;Edu/&gt;</a
+                        >
+                    </div>
+                    <!-- Navigation -->
+                    <nav class="space-x-3 md:space-x-6">
+                        <button
+                            class="bg-green-900 hover:bg-green-700 text-stone-100 font-medium py-2 px-4 rounded"
+                            onclick="location.href='mailto:eduardocbraga@hotmail.com';"
+                        >
+                            Contact
+                        </button>
+                    </nav>
+                </div>
+            </header>
+            <main
+                class="flex flex-grow flex-col items-center justify-center md:px-0"
+            >
+                <div
+                    class="text-center container max-w-3xl mx-auto mb-8 sm:mb-20 px-4"
+                >
+                    <img
+                        src="waving_hand.gif"
+                        class="w-20 mx-auto mb-4"
+                        alt="Waving hand"
+                    />
+                    <h1 class="text-6xl font-medium mb-4 cursor-default">
+                        <span
+                            id="greeting"
+                            class="transition-opacity duration-500"
+                            >Hey, tudo bem?<br />I’m Edu.</span
+                        >
+                    </h1>
+                    <p
+                        class="sm:text-xl text-lg sm:font-light text-gray-600 mb-2"
+                    >
+                        I'm a software developer and electrical engineer based
+                        in Brazil. 🇧🇷
+                    </p>
+                    <p class="sm:text-xl text-lg sm:font-light text-gray-600">
+                        I work with tech companies and clients to create
+                        exceptional products. I’m collaborating with PCM
+                        Soluções to enhance VoIP communications through
+                        innovative solutions.
+                    </p>
+                </div>
+            </main>
+            <!-- Footer -->
+            <footer class="py-4 px-4">
+                <div
+                    class="container mx-auto flex flex-col sm:flex-row justify-between items-center"
+                >
+                    <p class="text-green-900 font-medium my-4 sm:mb-0">
+                        Eduardo Braga - <span id="currentYear"></span>
+                    </p>
+                    <div
+                        class="flex flex-wrap justify-center sm:justify-end space-x-4 mb-8 sm:mb-0"
+                    >
+                        <a
+                            class="text-gray-600 hover:underline font-medium flex items-center space-x-2"
+                            target="_"
+                            href="https://github.com/educbraga"
+                            aria-label="GitHub"
+                        >
+                            <i class="fab fa-github text-xl"></i>
+                            <span class="xs:inline">Github</span>
+                        </a>
+                        <a
+                            class="text-gray-600 hover:underline font-medium flex items-center space-x-2"
+                            target="_"
+                            href="https://www.linkedin.com/in/educbraga/"
+                            aria-label="LinkedIn"
+                        >
+                            <i class="fab fa-linkedin text-xl"></i>
+                            <span class="xs:inline">LinkedIn</span>
+                        </a>
+                        <a
+                            class="text-gray-600 hover:underline font-medium flex items-center space-x-2"
+                            target="_"
+                            href="http://instagram.com/educbraga"
+                            aria-label="Instagram"
+                        >
+                            <i class="fab fa-instagram text-xl"></i>
+                            <span class="xs:inline">Instagram</span>
+                        </a>
+                        <a
+                            class="text-gray-600 hover:underline font-medium flex items-center space-x-2"
+                            target="_"
+                            href="https://medium.com/@educbraga00"
+                            aria-label="Medium"
+                        >
+                            <i class="fab fa-medium text-xl"></i>
+                            <span class="xs:inline">Medium</span>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script>
+            document.getElementById("currentYear").textContent =
+                new Date().getFullYear();
+        </script>
+    </body>
+</html>
